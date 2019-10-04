@@ -13,9 +13,10 @@ export class Page1Component implements OnInit {
   ) { }
 
   ngOnInit() {
+    document.title = 'page1';
   }
 
   routeToPage2() {
-    this.router.navigate(['/page2']);
+    this.router.navigate(['/page2'], { replaceUrl: false });
   }
 }
